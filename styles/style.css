@@ -1,0 +1,335 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* Header style details here *
+   
+   
+  
+
+
+
+/* nav-bar style  here */
+
+.nav-bar{
+    display: flex;
+    padding: 20px;
+    background-color: #AAAAAA;
+    padding: 20px;
+    list-style: none;
+   
+    
+}
+.nav-bar h3{
+    font-size: 28px;
+}
+
+.second-nav{
+   display: flex; 
+}
+
+.second-nav a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 24px;
+   
+}
+.second-nav a:hover{
+    background-color: tomato;
+    border-radius: 5px;
+}
+
+/* First main style here */
+.main-first-part{
+    display: flex;
+}
+
+
+.main-title{
+    font-size: 52px;
+}
+
+.main-camera{
+    background-image:url('/images/Circle\ design.svg');
+}
+
+.main-des{
+    margin-top: 16px;
+    font-size: 22px;
+}
+
+.main-btn{
+ margin-top: 16px;   
+ padding: 15px;
+ border-radius:10px;
+ background-color: #E02C6D;
+ color: white;
+ font-weight: 400;
+}
+
+.brand-name{
+    display: grid;
+    grid-template-columns:repeat(7,100px);
+    justify-content:center;
+    column-gap: 50px;
+    margin-top: 30px;
+}
+
+/* collection rating here */
+.collection{
+    margin-top:100px;
+}
+
+.collection-title{
+    font: 40px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.collection-pic-title{
+    margin-top: 16px;
+}
+
+.collection-pic-pera{
+    font-size:28px;
+    margin-top: 15px;
+    margin-bottom:10px;
+    
+}
+
+.collection-pic-pera-2{
+    margin-top:10px;
+    font-size: 14px;
+    color: #787885;
+    font-weight: 400px;
+}
+.collection-container{
+    display: flex;
+    align-items:center;
+    width: 1047;
+}
+
+.collection-rating{
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+/* feature style here */
+
+.feature-container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-title{
+    font-size: 38px;
+}
+
+.feature-detail{
+    margin-top:16px;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #6C6C6C;
+}
+
+.feature-btn{
+    margin-top:30px;
+    padding: 10px;
+    border:1px solid black;
+    width: 200px;
+    border-radius:20px;
+    font-size: 24px;
+    background-color: #E02C6D;
+}
+
+/* this is footer and last part style here */
+
+.footer-container{
+
+    width:100%;
+    height:200px;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    padding:50px;
+    
+
+}
+
+.footer-title{
+  margin-top:20px; 
+  margin-bottom: 10px; 
+}
+
+.footer-contact{
+    margin-top:10px;
+    font-size: 22px;
+    padding: 10px;
+    border-radius:5px;
+    
+}
+
+
+/* .......................
+    alert this media queries
+..........................*/
+
+/* Here nav-bar media queries for small device */
+    @media screen and (max-width:600px) {
+
+        body{
+            background-color: cadetblue;
+        }
+        .nav-bar{
+            flex-direction: column;
+            background-color: cadetblue;
+            text-align: center;
+        }
+        .second-nav{
+            width: 100%;
+           flex-direction: column;
+           
+        }
+        .second-nav a{
+            text-align: center;
+           
+        }
+            /* this main section fist here */
+         
+        .main-first-part{
+            flex-direction: column;
+            flex-direction: column-reverse;
+            justify-content: center;
+            background-color: cadetblue;
+        }
+        .main-details{
+            margin-top:30px;
+            text-align: center;
+        }  
+        
+        /* this is brand name style details here */
+        .brand-name{
+            grid-template-columns:repeat(3,4fr);
+            row-gap:30px;
+            justify-content: center;
+            background-color: cadetblue;
+            padding: 20px;
+            width: 100%;
+        }
+        /* popular collection product style here */
+    
+        .collection-container{
+            flex-direction: column;
+            
+           
+        }
+        .collection-rating{
+            margin-bottom: 20px;
+        }
+    
+        .collection-pic-pera-2{
+            margin-bottom:30px;
+            
+        }
+    
+        /* feature style here */
+        .feature-container{
+            flex-direction: column-reverse;
+        }
+        .feature-details{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    
+        
+            
+        
+        
+    }
+   
+    
+
+
+
+/* Here nav-bar media queries for medium device */
+
+@media screen and (min-width:599px) and (max-width:992px){
+    /* this is for nav-bar-style */
+    body{
+        background-color: cadetblue;
+    }
+    .nav-bar{
+        flex-direction: column;
+        background-color: cadetblue;
+        text-align: center;
+    }
+    .second-nav{
+        width: 100%;
+       flex-direction: column;
+       
+    }
+    .second-nav a{
+        text-align: center;
+       
+    }
+
+    /* this is main first style here */
+
+    .main-first-part{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        
+       
+       
+    }
+    .main-details{
+        margin-top:30px;
+       
+    }  
+
+    .main-camera{
+        text-align: center;
+    }
+
+    /* this is brand-name-style here */
+    .brand-name{
+        grid-template-columns:repeat(3,4fr);
+        row-gap:30px;
+        justify-content: center;
+       
+        padding: 20px;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    /* popular collection product style here */
+
+    .collection-container{
+        flex-direction: column;
+    }
+    
+
+    .collection-rating{
+        margin-bottom: 20px;
+    }
+
+    .collection-pic-pera-2{
+        margin-bottom:30px;
+        
+    }
+
+    /* feature style here */
+    .feature-container{
+        flex-direction: column-reverse;
+    }
+    .feature-details{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+
